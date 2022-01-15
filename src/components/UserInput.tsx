@@ -5,6 +5,7 @@ import { ActivityStore } from "../providers/Activity";
 import SaveAlt from "@mui/icons-material/SaveAlt";
 
 //TODO: add input debounce
+//TODO: add enter to save to history
 
 const UserInput = (): JSX.Element => {
   const {
