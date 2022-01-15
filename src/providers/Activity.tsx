@@ -33,6 +33,7 @@ export const ActivityProvider = ({ children }: ActivityProviderProps): JSX.Eleme
   const [userHistory, setUserHistory] = useState<Array<string>>([]);
 
   const generateCode = useCallback((value: string) => {
+    console.log(value);
     setCurrentValue(value);
   }, []);
   const saveToHistory = useCallback(

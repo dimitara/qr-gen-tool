@@ -39,7 +39,7 @@ const UserHistory = (): JSX.Element => {
         </Box>
       </Grid>
       <Grid item xs={12}>
-        <Box>{userHistory.length === 0 && <Typography>Nothing here</Typography>}</Box>
+        <Box textAlign={"left"}>{userHistory.length === 0 && <Typography>Nothing here yet</Typography>}</Box>
       </Grid>
       <Grid item xs={12}>
         <Box textAlign={"left"}>

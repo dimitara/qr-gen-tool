@@ -21,12 +21,10 @@ const UserInput = (): JSX.Element => {
     [generateCode]
   );
 
-  const onChange = useCallback(
-    (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      generateCode(e.target.value);
-    },
-    [generateCode]
-  );
+  const onChange = useCallback((e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    //console.log("change", e.target.value);
+    //generateCode(e.target.value);
+  }, []);
 
   const onSave = useCallback(() => {
     if (!!currentValue) saveToHistory(currentValue);
